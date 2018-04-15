@@ -15,7 +15,7 @@ export function* requestHelloSaga(message) {
         console.log("DispatchReceiveHelloAction-0006");
         yield put(receiveHelloFromServer(data.message));
     } catch (error) {
-        console.log("DataReceiveFailed-0004");
+        console.log("DataReceiveFailed-0005");
         Toast.showShort(NETWORK_ERROR.INFO);
     }
 }
